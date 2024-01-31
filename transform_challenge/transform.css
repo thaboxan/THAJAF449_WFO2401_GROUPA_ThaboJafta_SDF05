@@ -12,6 +12,13 @@
     animation-iteration-count: infinite;
 }
 
+/* Keyframes for the transform animation */
 @keyframes transform {
-    100% {transform: scale(0.5,0.5) rotate(45deg) translate(50px,0px);}
+    /* Define the animation at its completion (100%) */
+    100% {
+        transform: 
+            scale(0.5, 0.5) /* Scale the element down to 50% of its original size */
+            rotate(45deg) /* Rotate the element 45 degrees clockwise */
+            translate(50px, 0px); /* Move the element horizontally by 50 pixels */
+    }
 }

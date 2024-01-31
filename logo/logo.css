@@ -29,6 +29,14 @@ body {
     margin: 0;
 }
 
+/* Keyframes for the move animation */
 @keyframes move {
-    to {transform: translate(50vw, 50vh) scaleX(10) skew(60deg);}
+
+    to {
+        /* Transform the box with the following properties: */
+        transform: 
+            translate(50vw, 50vh) /* Move the box to 50% of the viewport width and height */
+            scaleX(10) /* Scale the box horizontally by a factor of 10 */
+            skew(60deg); /* Skew the box at a 60-degree angle */
+    }
 }
