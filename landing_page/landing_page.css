@@ -1,0 +1,57 @@
+/* baseline margin for the body element */
+body {
+    margin: 0;
+}
+
+/* Style for a container that wraps an image */
+.image-wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background: url("main.jpg"); /* Background image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: expand-fade-in; /* Animation for expanding and fading in */
+    animation-duration: 1.5s; /* Animation duration */
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
+/* Style for a title element */
+.title {
+    font-size: 4em;
+    text-transform: uppercase; /* Convert text to uppercase */
+    margin: 0;
+    font-family: Sen; /* Specify font family */
+    text-align: center;
+    animation-name: fade-in; /* Animation for fading in */
+    animation-duration: 1s; /* Animation duration */
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    animation-delay: 2s; /* Delay the animation */
+}
+
+/* Keyframes for the expand-fade-in animation */
+@keyframes expand-fade-in {
+    from {
+        opacity: 0%; /* Starting opacity */
+        width: 0%; /* Starting width */
+    }
+    to {
+        opacity: 100%; /* Ending opacity */
+        width: 100%; /* Ending width */
+    }
+}
+
+/* Keyframes for the fade-in animation */
+@keyframes fade-in {
+    from {
+        opacity: 0%; /* Starting opacity */
+    }
+    to {
+        opacity: 100%; /* Ending opacity */
+    }
+}
