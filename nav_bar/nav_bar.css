@@ -17,7 +17,7 @@ body {
 /* Styling for the navigation menu */
 .navMenu {
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%); /* Center the navigation menu */
 }
