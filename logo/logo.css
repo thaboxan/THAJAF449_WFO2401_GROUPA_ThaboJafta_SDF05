@@ -7,7 +7,12 @@ body {
 	height: 30px;
 	width: 30px;
     border-radius: 2px;
-    animation: move 2s ease-in-out 1s ;
+    animation: move 2s ease-in-out 1s ;     /*
+    - 'move' is the name of the keyframe animation to be applied.
+    - '2s' specifies the duration of the animation.
+    - 'ease-in-out' is the timing function, causing a smooth acceleration and deceleration.
+    - '1s' is the delay before the animation starts (1 second).
+  */
 
 }
 

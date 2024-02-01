@@ -28,9 +28,9 @@ body {
     font-family: Sen; /* Specify font family */
     text-align: center;
     animation-name: fade-in; /* Animation for fading in */
-    animation-duration: 1s; /* Animation duration */
-    animation-timing-function: ease-out;
-    animation-fill-mode: both;
+    animation-duration: 3s; /* Animation duration */
+    animation-timing-function: ease-out; /* Timing function for smoother animation */
+    animation-fill-mode: both; /* Apply animation styles before and after animation */
     animation-delay: 2s; /* Delay the animation */
 }
 
