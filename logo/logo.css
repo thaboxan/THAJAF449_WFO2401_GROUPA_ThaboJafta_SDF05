@@ -1,12 +1,14 @@
 body {
 	margin: 0;
-	background: #242423;
+	background: #5e5e51;
 }
 
 .box {
 	height: 30px;
 	width: 30px;
-    animation: move 2s ease-in-out 1s 
+    border-radius: 2px;
+    animation: move 2s ease-in-out 1s ;
+
 }
 
 .box-red {
