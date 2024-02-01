@@ -1,77 +1,80 @@
+/* Import Montserrat font from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+/* Reset margin, padding, and box-sizing for all elements */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Styling for the body */
 body {
-  background: #272727;
-  font-family: "Montserrat", sans-serif;
+  background: #272727; /* Set background color */
+  font-family: "Montserrat", sans-serif; /* Use Montserrat font for the body text */
 }
 
+/* Styling for the navigation menu */
 .navMenu {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); /* Center the navigation menu */
 }
 
+/* Styling for navigation menu links */
 .navMenu a {
-  color: #f6f4e6;
-  margin-left:2px;
-  margin-right:2px;
-  text-decoration: none;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  font-weight: 500;
+  color: #f6f4e6; /* Set text color */
+  margin-left: 2px;
+  margin-right: 2px;
+  text-decoration: none; /* Remove underline from links */
+  font-size: 1.2em; /* Set font size */
+  text-transform: uppercase; /* Convert text to uppercase */
+  font-weight: 500; /* Set font weight */
   display: inline;
-  width: 80px;
-  transition: all 0.2s ease-in-out;
+  width: 80px; /* Set width of each link */
+  transition: all 0.2s ease-in-out; /* Add transition for smooth effects */
 }
 
+/* Styling for navigation menu links on hover */
 .navMenu a:hover {
-  color: #fddb3a;
-  font-size:1.4rem;
+  color: #fddb3a; /* Change text color on hover */
+  font-size: 1.4rem; /* Increase font size on hover */
 }
 
+/* Styling for the dot indicator */
 .navMenu .dot {
   width: 6px;
   height: 6px;
-  background: #fddb3a;
-  border-radius: 50%;
-  opacity: 0;
-  transform: translateX(30px);
-  transition: all 0.2s ease-in-out;
+  background: #fddb3a; /* Set background color */
+  border-radius: 50%; /* Create a circular shape */
+  opacity: 0; /* Set initial opacity to 0 */
+  transform: translateX(30px); /* Move dot to the initial position */
+  transition: all 0.2s ease-in-out; /* Add transition for smooth effects */
 }
 
+/* Styling for dot on hover for each navigation link */
 .navMenu a:nth-child(1):hover ~ .dot {
   transform: translateX(35px);
-  transition: all 0.2s ease-in-out;
   opacity: 1;
 }
 
 .navMenu a:nth-child(2):hover ~ .dot {
-  -webkit-transform: translateX(135px);
   transform: translateX(135px);
-  transition: all 0.2s ease-in-out;
   opacity: 1;
 }
 
 .navMenu a:nth-child(3):hover ~ .dot {
   transform: translateX(235px);
-  transition: all 0.2s ease-in-out;
   opacity: 1;
 }
 
 .navMenu a:nth-child(4):hover ~ .dot {
   transform: translateX(355px);
-  transition: all 0.2s ease-in-out;
   opacity: 1;
 }
 
 .navMenu a:nth-child(5):hover ~ .dot {
   transform: translateX(490px);
-  transition: all 0.2s ease-in-out;
   opacity: 1;
 }
